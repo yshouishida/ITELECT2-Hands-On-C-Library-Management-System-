@@ -1,23 +1,90 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySqlConnector;
+using prjLibraryWIthLogin.Database;
 using System.Windows.Forms;
 
 namespace prjLibraryWIthLogin.Forms
 {
     public partial class frmLogin : Form
     {
+        public int UserId { get; set; }
+
         public frmLogin()
         {
             InitializeComponent();
         }
 
-        private void checkBoxShowPwd_CheckedChanged(object sender, EventArgs e) => txtPassword.UseSystemPasswordChar = checkBoxShowPwd.Checked ? false : true;
+        private void checkBoxShowPwd_CheckedChanged(object sender, EventArgs e) => 
+            txtPassword.UseSystemPasswordChar = checkBoxShowPwd.Checked ? false : true;
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtEmail.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                MessageBox.Show("Email and password are required.");
+                return;
+            }
+
+            try
+            {
+                if (!DbConnection.GetConnection()) return;
+
+                using (MySqlCommand cmd = DbConnection.Connection.CreateCommand())
+                {
+                    cmd.CommandText = @"
+                        SELECT 
+                            id,
+                            email,
+                            password
+                        FROM tblUsers
+                        WHERE email = @email AND password = @password
+                    ";
+                    cmd.Parameters.AddWithValue("@email", txtEmail.Text.Trim());
+                    cmd.Parameters.AddWithValue("@password", txtPassword.Text);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            UserId = Convert.ToInt32(reader["id"]);
+
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid email or password.");
+                            return;
+                        }
+                    }
+
+                    this.Hide();
+
+                    using (frmMain main = new frmMain(UserId))
+                    {
+                        main.ShowDialog();
+                    }
+
+                    txtEmail.Clear();
+                    txtPassword.Clear();                    
+
+                    this.Show();
+                    txtEmail.Focus();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                DbConnection.ConnClose();
+            }
+        }
     }
 }

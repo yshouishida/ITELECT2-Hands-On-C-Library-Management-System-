@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySqlConnector;
 using System.Windows.Forms;
 
@@ -13,7 +9,7 @@ namespace prjLibraryWIthLogin.Database
     {
         public static  MySqlConnection Connection;
 
-        public static bool DbConnect()
+        public static bool GetConnection()
         {
             try
             {
@@ -28,6 +24,11 @@ namespace prjLibraryWIthLogin.Database
                 MessageBox.Show(ex.Message);
                 return false;
             }
+        }
+
+        public static void ConnClose()
+        {
+            Connection?.Close();
         }
     }
 }
