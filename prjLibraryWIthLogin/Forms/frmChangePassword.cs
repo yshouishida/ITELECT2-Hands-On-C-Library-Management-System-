@@ -78,9 +78,6 @@ namespace prjLibraryWIthLogin.Forms
                 MessageBox.Show("Password has changed successfully.");
                 this.DialogResult = DialogResult.OK;
                 this.Close();
-
-               
-
             }
             catch (Exception ex)
             {

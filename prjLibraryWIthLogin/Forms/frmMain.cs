@@ -262,5 +262,13 @@ namespace prjLibraryWIthLogin
                 btnSearch.PerformClick();
             } 
         }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            using (frmBookReport report = new frmBookReport())
+            {
+                report.ShowDialog();
+            }
+        }
     }
 }
