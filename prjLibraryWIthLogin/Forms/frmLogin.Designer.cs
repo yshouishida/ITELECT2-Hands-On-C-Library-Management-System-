@@ -66,6 +66,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(331, 29);
             this.txtEmail.TabIndex = 2;
+            this.txtEmail.Text = "jeane";
             // 
             // txtPassword
             // 
@@ -74,6 +75,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(331, 29);
             this.txtPassword.TabIndex = 4;
+            this.txtPassword.Text = "asd";
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label3

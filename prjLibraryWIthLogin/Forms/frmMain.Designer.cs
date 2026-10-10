@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlFooter = new System.Windows.Forms.Panel();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -62,6 +62,7 @@
             this.btnDelete = new System.Windows.Forms.ToolStripButton();
             this.btnRefresh = new System.Windows.Forms.ToolStripButton();
             this.btnReport = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.pnlFooter.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.pnlBody.SuspendLayout();
@@ -238,9 +239,9 @@
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Column6.DataPropertyName = "year";
-            dataGridViewCellStyle1.Format = "yyyy";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Format = "yyyy";
+            dataGridViewCellStyle3.NullValue = null;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column6.HeaderText = "PUBLICATION YEAR";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
@@ -266,9 +267,9 @@
             // 
             this.created_at.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.created_at.DataPropertyName = "created_at";
-            dataGridViewCellStyle2.Format = "g";
-            dataGridViewCellStyle2.NullValue = null;
-            this.created_at.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Format = "g";
+            dataGridViewCellStyle4.NullValue = null;
+            this.created_at.DefaultCellStyle = dataGridViewCellStyle4;
             this.created_at.HeaderText = "CREATED_AT";
             this.created_at.Name = "created_at";
             this.created_at.ReadOnly = true;
@@ -326,9 +327,10 @@
             this.btnNew,
             this.toolStripSeparator1,
             this.btnEdit,
-            this.toolStripSeparator2,
+            this.toolStripSeparator3,
             this.btnDelete,
             this.btnRefresh,
+            this.toolStripSeparator2,
             this.btnReport});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -404,8 +406,13 @@
             this.btnReport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(93, 62);
-            this.btnReport.Text = "Report";
+            this.btnReport.Text = "Re&port";
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 65);
             // 
             // frmMain
             // 
@@ -472,6 +479,7 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripButton btnReport;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }
 

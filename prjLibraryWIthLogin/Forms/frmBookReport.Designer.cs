@@ -37,17 +37,15 @@
             this.rvBook.Location = new System.Drawing.Point(0, 0);
             this.rvBook.Name = "rvBook";
             this.rvBook.ServerReport.BearerToken = null;
-            this.rvBook.Size = new System.Drawing.Size(1184, 661);
+            this.rvBook.Size = new System.Drawing.Size(1031, 513);
             this.rvBook.TabIndex = 0;
             // 
             // frmBookReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.ClientSize = new System.Drawing.Size(1031, 513);
             this.Controls.Add(this.rvBook);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmBookReport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

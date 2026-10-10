@@ -56,7 +56,7 @@ namespace prjLibraryWIthLogin.Forms
                         title,
                         author,
                         ISBN,
-                        year,
+                        DATE_FORMAT(year, '%Y') AS year,
                         category,
                         description
                     FROM tblBooks
