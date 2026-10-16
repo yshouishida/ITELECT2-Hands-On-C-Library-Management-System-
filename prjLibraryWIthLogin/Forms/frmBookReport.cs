@@ -28,6 +28,8 @@ namespace prjLibraryWIthLogin.Forms
 
                 rvBook.RefreshReport();
                 rvBook.SetDisplayMode(DisplayMode.PrintLayout);
+
+                rvBook.LocalReport.DisplayName = $"Library_Report_{DateTime.Now:MMM dd, yyyy}";
             }
             catch (Exception ex)
             {

@@ -13,7 +13,7 @@ namespace prjLibraryWIthLogin.Database
         {
             try
             {
-                Connection = new MySqlConnection("Server=localhost;Database=dbLibrary;Uid=root;Pwd=");
+                Connection = new MySqlConnection("Server=localhost;Database=dbLibrary;Uid=root;Pwd=P@ssw0rd123;SslMode=None;");
                 Connection.Open();
 
                 return true;

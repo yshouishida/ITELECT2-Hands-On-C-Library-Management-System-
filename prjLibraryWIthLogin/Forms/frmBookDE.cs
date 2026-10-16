@@ -13,7 +13,7 @@ namespace prjLibraryWIthLogin.Forms
         private int BookId { get; set; }
         private int UserId { get; set; }
         private bool IsEdit { get; set; }
-       
+
 
         public frmBookDE(int userId)
         {
@@ -66,7 +66,7 @@ namespace prjLibraryWIthLogin.Forms
                         WHERE id = @id
                     ";
                     cmd.Parameters.AddWithValue("@id", BookId);
-                    
+
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
                         if (reader.Read())
@@ -141,7 +141,7 @@ namespace prjLibraryWIthLogin.Forms
                     MessageBox.Show(IsEdit ? "Updated successfully." : "Added successfully.");
 
                     this.Close();
-                    
+
 
                 }
             }
