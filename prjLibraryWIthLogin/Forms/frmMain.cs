@@ -227,13 +227,14 @@ namespace prjLibraryWIthLogin
                         description,
                         created_at
                     FROM tblBooks
-                    WHERE title LIKE @title;
+                    WHERE title LIKE @title OR author LIKE @author;
                 ";
 
                 using (MySqlCommand cmd = DbConnection.Connection.CreateCommand())
                 {
                     cmd.CommandText = sql;
                     cmd.Parameters.AddWithValue("@title", "%" + txtSearch.Text.Trim() + "%");
+                    cmd.Parameters.AddWithValue("@author", "%" + txtSearch.Text.Trim() + "%");
 
                     using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
                     {
@@ -243,8 +244,10 @@ namespace prjLibraryWIthLogin
                         dgvBooks.DataSource = null;
                         dgvBooks.DataSource = dt;
 
+                        dgvBooks.AutoGenerateColumns = false;
+
                         dgvBooks.ClearSelection();
-                        dgvBooks.CurrentCell = null;
+                        dgvBooks.CurrentCell = null;    
                     }
 
                 }
@@ -255,19 +258,20 @@ namespace prjLibraryWIthLogin
             }
         }
 
-        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnSearch.PerformClick();
-            } 
-        }
 
         private void btnReport_Click(object sender, EventArgs e)
         {
             using (frmBookReport report = new frmBookReport())
             {
                 report.ShowDialog();
+            }
+        }
+
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSearch.PerformClick();
             }
         }
     }

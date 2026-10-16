@@ -25,6 +25,7 @@ namespace prjLibraryWIthLogin.Forms
         private void checkBoxPwd_CheckedChanged(object sender, EventArgs e)
         {
             txtCurrentPwd.UseSystemPasswordChar = checkBoxPwd.Checked ? false : true;
+
             txtNewPwd.UseSystemPasswordChar = checkBoxPwd.Checked ? false : true;
             txtReEnterPwd.UseSystemPasswordChar = checkBoxPwd.Checked ? false : true;
         }
