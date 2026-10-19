@@ -40,9 +40,6 @@ namespace prjLibraryWIthLogin.Forms
 
             if (IsEdit) LoadBookById();
 
-            //MessageBox.Show($"UserID: {UserId}");
-
-
         }
 
         private void LoadBookById()

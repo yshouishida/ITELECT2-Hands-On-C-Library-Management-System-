@@ -17,11 +17,6 @@ namespace prjLibraryWIthLogin.Forms
         private void checkBoxShowPwd_CheckedChanged(object sender, EventArgs e) => 
             txtPassword.UseSystemPasswordChar = checkBoxShowPwd.Checked ? false : true;
 
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtEmail.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
@@ -52,8 +47,6 @@ namespace prjLibraryWIthLogin.Forms
                         if (reader.Read())
                         {
                             UserId = Convert.ToInt32(reader["id"]);
-
-
                         }
                         else
                         {
