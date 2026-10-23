@@ -736,8 +736,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>bookDataSet</DataSetName>
-        <Top>0.34396cm</Top>
-        <Left>3.12208cm</Left>
+        <Top>1.74625cm</Top>
+        <Left>0.92604cm</Left>
         <Height>1.6498cm</Height>
         <Width>22.64643cm</Width>
         <Style>
@@ -766,14 +766,51 @@
           </RightBorder>
         </Style>
       </Tablix>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Book List Report</Value>
+                <Style>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>18pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.19667in</Top>
+        <Left>0.36458in</Left>
+        <Height>0.42139in</Height>
+        <Width>8.91592in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>0.78494in</Height>
+    <Height>1.33703in</Height>
     <Style />
   </Body>
-  <Width>10.57542in</Width>
+  <Width>9.2805in</Width>
   <Page>
-    <PageHeight>8.27in</PageHeight>
-    <PageWidth>11.69in</PageWidth>
+    <PageHeight>11.69in</PageHeight>
+    <PageWidth>8.27in</PageWidth>
     <LeftMargin>0.25in</LeftMargin>
     <RightMargin>0.25in</RightMargin>
     <TopMargin>0.25in</TopMargin>

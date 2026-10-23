@@ -135,17 +135,17 @@
             // txtDesc
             // 
             this.txtDesc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDesc.Location = new System.Drawing.Point(322, 255);
+            this.txtDesc.Location = new System.Drawing.Point(322, 193);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(300, 96);
+            this.txtDesc.Size = new System.Drawing.Size(300, 158);
             this.txtDesc.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(318, 231);
+            this.label6.Location = new System.Drawing.Point(318, 169);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 21);
             this.label6.TabIndex = 11;
@@ -155,7 +155,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(318, 169);
+            this.label7.Location = new System.Drawing.Point(318, 107);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(93, 21);
             this.label7.TabIndex = 9;
@@ -211,7 +211,7 @@
             "Fiction",
             "Children",
             "Programming"});
-            this.cbCategory.Location = new System.Drawing.Point(322, 193);
+            this.cbCategory.Location = new System.Drawing.Point(322, 131);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(300, 29);
             this.cbCategory.TabIndex = 16;
@@ -221,7 +221,7 @@
             this.AcceptButton = this.btnSaveAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 461);
+            this.ClientSize = new System.Drawing.Size(634, 442);
             this.Controls.Add(this.cbCategory);
             this.Controls.Add(this.dtpYear);
             this.Controls.Add(this.btnClear);

@@ -49,7 +49,7 @@
             this.MinimizeBox = false;
             this.Name = "frmBookReport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmBookReport";
+            this.Text = "Report";
             this.Load += new System.EventHandler(this.frmBookReport_Load);
             this.ResumeLayout(false);
 

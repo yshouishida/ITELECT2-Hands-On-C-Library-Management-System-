@@ -79,5 +79,10 @@ namespace prjLibraryWIthLogin.Forms
                 DbConnection.ConnClose();
             }
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
