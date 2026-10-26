@@ -110,6 +110,7 @@
             // 
             // btnChangePwd
             // 
+            this.btnChangePwd.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnChangePwd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnChangePwd.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangePwd.Location = new System.Drawing.Point(16, 291);
@@ -117,7 +118,7 @@
             this.btnChangePwd.Size = new System.Drawing.Size(356, 55);
             this.btnChangePwd.TabIndex = 4;
             this.btnChangePwd.Text = "Change";
-            this.btnChangePwd.UseVisualStyleBackColor = true;
+            this.btnChangePwd.UseVisualStyleBackColor = false;
             this.btnChangePwd.Click += new System.EventHandler(this.btnChangePwd_Click);
             // 
             // checkBoxPwd
