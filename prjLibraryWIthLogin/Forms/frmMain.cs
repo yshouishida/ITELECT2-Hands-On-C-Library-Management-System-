@@ -16,5 +16,15 @@ namespace prjLibraryWIthLogin.Forms
         {
             InitializeComponent();
         }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            new frmUserManage().ShowDialog();
+        }
+
+        private void btnBooks_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

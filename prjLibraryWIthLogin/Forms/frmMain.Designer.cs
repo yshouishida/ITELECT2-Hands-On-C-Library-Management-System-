@@ -34,9 +34,9 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.btnNew = new System.Windows.Forms.ToolStripButton();
+            this.btnUsers = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnEdit = new System.Windows.Forms.ToolStripButton();
+            this.btnBooks = new System.Windows.Forms.ToolStripButton();
             this.pnlToolbar.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.pnlHeader.SuspendLayout();
@@ -89,41 +89,43 @@
             this.toolStrip2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnNew,
+            this.btnUsers,
             this.toolStripSeparator1,
-            this.btnEdit});
+            this.btnBooks});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.Size = new System.Drawing.Size(884, 65);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
-            // btnNew
+            // btnUsers
             // 
-            this.btnNew.BackColor = System.Drawing.Color.LightGreen;
-            this.btnNew.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnNew.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.Image = ((System.Drawing.Image)(resources.GetObject("btnNew.Image")));
-            this.btnNew.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(78, 62);
-            this.btnNew.Text = "Users";
+            this.btnUsers.BackColor = System.Drawing.Color.LightGreen;
+            this.btnUsers.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnUsers.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
+            this.btnUsers.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(78, 62);
+            this.btnUsers.Text = "Users";
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 65);
             // 
-            // btnEdit
+            // btnBooks
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
-            this.btnEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(85, 62);
-            this.btnEdit.Text = "Books";
+            this.btnBooks.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnBooks.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnBooks.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooks.Image = ((System.Drawing.Image)(resources.GetObject("btnBooks.Image")));
+            this.btnBooks.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnBooks.Name = "btnBooks";
+            this.btnBooks.Size = new System.Drawing.Size(85, 62);
+            this.btnBooks.Text = "Books";
+            this.btnBooks.Click += new System.EventHandler(this.btnBooks_Click);
             // 
             // frmMain
             // 
@@ -156,8 +158,8 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.ToolStrip toolStrip2;
-        private System.Windows.Forms.ToolStripButton btnNew;
+        private System.Windows.Forms.ToolStripButton btnUsers;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton btnEdit;
+        private System.Windows.Forms.ToolStripButton btnBooks;
     }
 }
