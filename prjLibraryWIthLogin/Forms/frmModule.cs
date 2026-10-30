@@ -12,8 +12,12 @@ namespace prjLibraryWIthLogin.Forms
 {
     public partial class frmModule : Form
     {
-        public frmModule()
+        private int UserId { get; set; }
+
+        public frmModule(int userId)
         {
+            UserId = userId;
+
             InitializeComponent();
         }
 
@@ -26,7 +30,7 @@ namespace prjLibraryWIthLogin.Forms
 
         private void btnBooks_Click(object sender, EventArgs e)
         {
-            new frmModule().ShowDialog();
+            new frmMain(UserId).ShowDialog();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
