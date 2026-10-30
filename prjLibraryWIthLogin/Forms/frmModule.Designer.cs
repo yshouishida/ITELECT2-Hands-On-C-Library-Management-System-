@@ -1,6 +1,6 @@
 ﻿namespace prjLibraryWIthLogin.Forms
 {
-    partial class frmMain
+    partial class frmModule
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmModule));
             this.pnlToolbar = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
@@ -139,6 +139,7 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Form";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.pnlToolbar.ResumeLayout(false);
             this.pnlToolbar.PerformLayout();
             this.toolStrip1.ResumeLayout(false);

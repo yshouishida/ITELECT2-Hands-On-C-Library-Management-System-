@@ -57,7 +57,7 @@ namespace prjLibraryWIthLogin.Forms
 
                     this.Hide();
 
-                    using (frmMain main = new frmMain(UserId))
+                    using (frmModule main = new frmModule(UserId))
                     {
                         main.ShowDialog();
                     }

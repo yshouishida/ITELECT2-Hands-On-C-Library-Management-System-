@@ -10,12 +10,14 @@ using System.Windows.Forms;
 
 namespace prjLibraryWIthLogin.Forms
 {
-    public partial class frmMain : Form
+    public partial class frmModule : Form
     {
-        public frmMain()
+        public frmModule()
         {
             InitializeComponent();
         }
+
+
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
@@ -24,7 +26,12 @@ namespace prjLibraryWIthLogin.Forms
 
         private void btnBooks_Click(object sender, EventArgs e)
         {
-            
+            new frmModule().ShowDialog();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
